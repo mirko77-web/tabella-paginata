@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <select id="limit">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="*">All</option>
+        </select>
+        <button id="prev">Prev</button>
+        <span id="page"></span>
+        <button id="next">Next</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+               <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>
+            </thead>
+            <tbody id="table-data"></tbody>
+        </table>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
